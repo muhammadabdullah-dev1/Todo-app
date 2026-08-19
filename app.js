@@ -24,17 +24,25 @@ addBtn.addEventListener("click", function (dets) {
         li.appendChild(updbtn)
 
         span.textContent = todoInput.value
-        
+
         todoInput.value = ""
 
 
 
         updbtn.addEventListener("click", function () {
             let newText = prompt("Update tex")
-            li.textContent = newText
+            span.textContent = newText
         })
+
+
+
+         delbtn.addEventListener("click", function () {
+        delbtn.li
+        li.remove()
+    })
     }
 
+   
 
     // appendchild(todoList.textContent = todoInput.value)
 
