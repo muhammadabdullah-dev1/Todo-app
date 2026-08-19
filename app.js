@@ -8,13 +8,16 @@ addBtn.addEventListener("click", function (dets) {
 
     if (todoInput.value !== "") {
         const li = document.createElement("li")
+        const span =document.createElement("span")
+        const delbtn =document.createElement("button")
+        const addbtn =document.createElement("button")
         li.textContent = todoInput.value
         todoList.appendChild(li)
+        li.appendChild(addbtn)
+        li.appendChild(addbtn)
          todoInput.value = ""
 
-    } else {
-       
-    }
+    } 
 
 
     // appendchild(todoList.textContent = todoInput.value)
