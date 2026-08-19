@@ -18,19 +18,20 @@ addBtn.addEventListener("click", function (dets) {
 
         const updbtn = document.createElement("button")
         updbtn.innerHTML = "Update"
-
-        li.textContent = todoInput.value
         todoList.appendChild(li)
         li.appendChild(span)
         li.appendChild(delbtn)
         li.appendChild(updbtn)
+
+        span.textContent = todoInput.value
+        
         todoInput.value = ""
 
 
 
         updbtn.addEventListener("click", function () {
             let newText = prompt("Update tex")
-            li.textContent = newText.value
+            li.textContent = newText
         })
     }
 
